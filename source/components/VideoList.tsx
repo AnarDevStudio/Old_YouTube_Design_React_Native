@@ -1,6 +1,6 @@
 import { ScrollView, View } from "react-native";
 import VideoContainer from "./VideoContainer";
-
+// Calisiyir
 export default function VideoList() {
   return (
     <View className="w-screen p-2">
@@ -9,7 +9,7 @@ export default function VideoList() {
             <VideoContainer />
             <VideoContainer />
             <VideoContainer />
-            <VideoContainer />
+            <VideoContainer /> 
             <VideoContainer />
             <VideoContainer />
             <VideoContainer />
