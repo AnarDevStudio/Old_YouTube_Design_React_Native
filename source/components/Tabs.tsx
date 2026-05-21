@@ -1,5 +1,6 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HomeScreen from "../screens/HomeScreen";
+import TredingScreen from "screens/TredingScreen";
 import Header from "../components/Header";
 import { View } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
@@ -11,6 +12,15 @@ function HomeWrapper() {
     <View className="flex-1">
       <Header />
       <HomeScreen />
+    </View>
+  );
+}
+
+function TrendingWrapper() {
+  return (
+    <View className="flex-1">
+      <Header />
+      <TredingScreen />
     </View>
   );
 }
@@ -35,7 +45,7 @@ export default function Tabs() {
 
       <Tab.Screen
         name="Trending"
-        component={HomeWrapper}
+        component={TrendingWrapper}
         options={{
           tabBarIcon: ({ focused }) => (
             <FontAwesome name="fire" size={25} color={focused ? "red" : "gray"} />
